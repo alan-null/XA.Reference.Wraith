@@ -1,0 +1,32 @@
+browser: "casperjs"
+
+domains:
+  pattern: "http://10.0.75.1"
+
+paths:
+
+screen_widths:
+  - 1280
+
+resize_or_reload: 'resize'
+
+history_dir: 'shots_base'
+
+directory: 'shots'
+
+fuzz: '20%'
+
+threshold: 0
+
+gallery:
+  template: 'slideshow_template'
+  thumb_width:  200
+  thumb_height: 200
+
+mode: diffs_only
+
+verbose: false
+
+highlight_color: red
+
+phantomjs_options: ''

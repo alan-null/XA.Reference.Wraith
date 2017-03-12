@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "command": "powershell",
+    "args": [
+        "-ExecutionPolicy",
+        "Unrestricted",
+        "-NoProfile",
+        "-File",
+        "${workspaceRoot}/ps/build.ps1"
+    ],
+    "showOutput": "always",
+    "tasks": [{
+            "taskName": "build",
+            "showOutput": "always",
+            "isBuildCommand": true,
+            "args": ["build"]
+        },
+        {
+            "taskName": "history",
+            "showOutput": "always",
+            "isBuildCommand": true,
+            "args": ["history"]
+        },
+        {
+            "taskName": "both",
+            "showOutput": "always",
+            "isBuildCommand": true,
+            "args": ["both"]
+        }
+    ]
+}
