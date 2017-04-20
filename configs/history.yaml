@@ -4,6 +4,190 @@ domains:
   pattern: "http://10.0.75.1"
 
 paths:
+  renderings_compliancy:
+    path: /renderings/compliancy
+  renderings_compliancy_cookie-warning:
+    path: /renderings/compliancy/cookie-warning
+  renderings_composites:
+    path: /renderings/composites
+  renderings_composites_accordion:
+    path: /renderings/composites/accordion
+  renderings_composites_carousel:
+    path: /renderings/composites/carousel
+  renderings_composites_flip:
+    path: /renderings/composites/flip
+  renderings_composites_tabs:
+    path: /renderings/composites/tabs
+  renderings_context:
+    path: /renderings/context
+  renderings_context_language-selector:
+    path: /renderings/context/language-selector
+  renderings_context_siteselector:
+    path: /renderings/context/siteselector
+  renderings_engagement:
+    path: /renderings/engagement
+  renderings_engagement_disqus:
+    path: /renderings/engagement/disqus
+    before_capture: 'javascript/wait--casper.js'
+  renderings_engagement_facebook-comments:
+    path: /renderings/engagement/facebook-comments
+    before_capture: 'javascript/wait--casper.js'
+  renderings_engagement_livefyre:
+    path: /renderings/engagement/livefyre
+  renderings_events:
+    path: /renderings/events
+  renderings_events_event-calendar:
+    path: /renderings/events/event-calendar
+  renderings_events_event-list:
+    path: /renderings/events/event-list
+  renderings_forms:
+    path: /renderings/forms
+  renderings_forms_form-wrapper:
+    path: /renderings/forms/form-wrapper
+  renderings_maps:
+    path: /renderings/maps
+  renderings_maps_map:
+    path: /renderings/maps/map
+    before_capture: 'javascript/wait--casper.js'
+  renderings_media:
+    path: /renderings/media
+  renderings_media_file-list:
+    path: /renderings/media/file-list
+  renderings_media_flash:
+    path: /renderings/media/flash
+  renderings_media_gallery:
+    path: /renderings/media/gallery
+    before_capture: 'javascript/renderings/renderings_media_gallery.js'
+  renderings_media_image:
+    path: /renderings/media/image
+  renderings_media_media-link:
+    path: /renderings/media/media-link
+  renderings_media_playlist:
+    path: /renderings/media/playlist
+  renderings_media_reusable-image:
+    path: /renderings/media/reusable-image
+  renderings_media_video:
+    path: /renderings/media/video
+  renderings_navigation:
+    path: /renderings/navigation
+  renderings_navigation_archive:
+    path: /renderings/navigation/archive
+  renderings_navigation_breadcrumb:
+    path: /renderings/navigation/breadcrumb
+  renderings_navigation_link:
+    path: /renderings/navigation/link
+  renderings_navigation_link-list:
+    path: /renderings/navigation/link-list
+  renderings_navigation_navigation:
+    path: /renderings/navigation/navigation
+  renderings_page-content:
+    path: /renderings/page-content
+  renderings_page-content_field-editor:
+    path: /renderings/page-content/field-editor
+  renderings_page-content_page-content:
+    path: /renderings/page-content/page-content
+  renderings_page-content_page-list:
+    path: /renderings/page-content/page-list
+  renderings_page-content_pagination:
+    path: /renderings/page-content/pagination
+  renderings_page-content_plain-html:
+    path: /renderings/page-content/plain-html
+  renderings_page-content_promo:
+    path: /renderings/page-content/promo
+  renderings_page-content_reusable-plain-html:
+    path: /renderings/page-content/reusable-plain-html
+  renderings_page-content_reusablerichtext:
+    path: /renderings/page-content/reusablerichtext
+  renderings_page-content_richtext:
+    path: /renderings/page-content/richtext
+  renderings_page-content_title:
+    path: /renderings/page-content/title
+  renderings_page-structure:
+    path: /renderings/page-structure
+  renderings_page-structure_column-splitter:
+    path: /renderings/page-structure/column-splitter
+  renderings_page-structure_container:
+    path: /renderings/page-structure/container
+  renderings_page-structure_divider:
+    path: /renderings/page-structure/divider
+  renderings_page-structure_editmodepanel:
+    path: /renderings/page-structure/editmodepanel
+  renderings_page-structure_iframe:
+    path: /renderings/page-structure/iframe
+  renderings_page-structure_row-splitter:
+    path: /renderings/page-structure/row-splitter
+  renderings_page-structure_toggle:
+    path: /renderings/page-structure/toggle
+  renderings_search:
+    path: /renderings/search
+  renderings_search_checklist-filter:
+    path: /renderings/search/checklist-filter
+    before_capture: 'javascript/renderings/searach.js'
+  renderings_search_date-filter:
+    path: /renderings/search/date-filter
+  renderings_search_dropdown-filter:
+    path: /renderings/search/dropdown-filter
+    before_capture: 'javascript/renderings/searach.js'
+  renderings_search_facet-slider:
+    path: /renderings/search/facet-slider
+  renderings_search_load-more:
+    path: /renderings/search/load-more
+  renderings_search_location-filter:
+    path: /renderings/search/location-filter
+    before_capture: 'javascript/wait--casper.js'
+  renderings_search_managed-range-filter:
+    path: /renderings/search/managed-range-filter
+  renderings_search_page-selector:
+    path: /renderings/search/page-selector
+  renderings_search_page-size:
+    path: /renderings/search/page-size
+  renderings_search_radius-filter:
+    path: /renderings/search/radius-filter
+    before_capture: 'javascript/wait--casper.js'
+  renderings_search_range-slider-filter:
+    path: /renderings/search/range-slider-filter
+  renderings_search_results-count:
+    path: /renderings/search/results-count
+  renderings_search_results-variant-selector:
+    path: /renderings/search/results-variant-selector
+  renderings_search_search-box:
+    path: /renderings/search/search-box
+  renderings_search_search-results:
+    path: /renderings/search/search-results
+  renderings_search_sort-results:
+    path: /renderings/search/sort-results
+  renderings_security:
+    path: /renderings/security
+  renderings_security_login:
+    path: /renderings/security/login
+  renderings_security_logout:
+    path: /renderings/security/logout
+  renderings_security_social-login-wrapper:
+    path: /renderings/security/social-login-wrapper
+  renderings_social:
+    path: /renderings/social
+  renderings_social_addthis:
+    path: /renderings/social/addthis
+    before_capture: 'javascript/wait--casper.js'
+  renderings_social_feed:
+    path: /renderings/social/feed
+  renderings_social_social-media-share:
+    path: /renderings/social/social-media-share
+    before_capture: 'javascript/wait--casper.js'
+  renderings_social_twitter:
+    path: /renderings/social/twitter
+    before_capture: 'javascript/wait--casper.js'
+  renderings_stickynotes:
+    path: /renderings/stickynotes
+  renderings_stickynotes_stickynote:
+    path: /renderings/stickynotes/stickynote
+  renderings_taxonomy:
+    path: /renderings/taxonomy
+  renderings_taxonomy_tag-cloud:
+    path: /renderings/taxonomy/tag-cloud
+  renderings_taxonomy_tag-list:
+    path: /renderings/taxonomy/tag-list
+
 
 screen_widths:
   - 1280
