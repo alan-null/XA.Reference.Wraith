@@ -21,7 +21,7 @@ Wraith uses a headless browser to create screenshots of webpages on different en
 
 ## Build commands
 
-Usage
+#### Usage
 
 `.\ps\build.ps1 task`
 
@@ -30,10 +30,22 @@ Available tasks:
 * `history` - creates patterns
 * `both` - execute both commands (`history`,`latest`) [<sup>2</sup>](#2)
 
+## Accepting new patterns
 
+When `latest` screenshots should became new `patterns` you have to accept them.
+
+![new patterns](https://cloud.githubusercontent.com/assets/6848691/25241605/e428265e-25f6-11e7-8874-9d7e76292f89.png)
+
+To do it easier, you can use **PowerShell** script for that.
+
+#### Usage
+
+`.\ps\accept.ps1 [[-pages] <String[]>] [<CommonParameters>]`
+
+`.\ps\accept.ps1 renderings_taxonomy_tag-cloud,renderings_stickynotes_stickynote`
 
 <hr>
 
-<a name="1"></a> <sup>1. Disk where you checkout this repo</sup>
+<a name="1"></a> <sup>1. Disk where you checkout this repository</sup>
 
-<a name="2"></a> <sup>2. Useful when we want to check whether results are correct in two succeeding tests. If not it means that in the future we will get many false possitives.</sup>
+<a name="2"></a> <sup>2. Useful when we want to check whether results are correct in two succeeding tests. If not it means that in the future we will get many false positives.</sup>

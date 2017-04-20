@@ -26,8 +26,8 @@ Clear-Host
 Push-Location $PSScriptRoot
 
 if ($pages) {
+    Set-Location ..
     $pages | ForEach-Object {
-        cd ..
         $latest = Get-Item "shots/$($_)/MULTI_casperjs_pattern_latest.png"
         $pattern = Get-Item "shots_base/$($_)/MULTI_casperjs_pattern.png"
 
@@ -38,8 +38,8 @@ if ($pages) {
         Rename-Item -Path "shots_base/$($_)/MULTI_casperjs_pattern_latest.png" -NewName "MULTI_casperjs_pattern.png"
         Remove-Item -Path "shots/$($_)" -Recurse
 
-        .\ps\Invoke-Wraith.ps1  generate_gallery configs/history.yaml
     }
+    .\ps\Invoke-Wraith.ps1  generate_gallery configs/history.yaml
 } else {
     Get-Help $MyInvocation.MyCommand.Path
 }
