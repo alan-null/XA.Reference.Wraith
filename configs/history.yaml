@@ -4,6 +4,10 @@ domains:
   pattern: "http://10.0.75.1"
 
 paths:
+  home:
+    path: /
+  movies:
+    path: /movies
   renderings_compliancy:
     path: /renderings/compliancy
   renderings_compliancy_cookie-warning:
