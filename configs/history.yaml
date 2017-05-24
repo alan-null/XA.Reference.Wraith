@@ -191,7 +191,12 @@ paths:
     path: /renderings/taxonomy/tag-cloud
   renderings_taxonomy_tag-list:
     path: /renderings/taxonomy/tag-list
-
+  renderings_json_content:
+    path: /renderings/json/json-content?sc_device={0B4A31C9-712D-4578-A396-2DDC0F34B63A}
+  renderings_json_list:
+    path: /renderings/json/json-list?sc_device={0B4A31C9-712D-4578-A396-2DDC0F34B63A}
+  renderings_json_results:
+    path: /renderings/json/json-results?sc_device={0B4A31C9-712D-4578-A396-2DDC0F34B63A}
 
 screen_widths:
   - 1280
