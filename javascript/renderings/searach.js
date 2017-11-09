@@ -1,5 +1,7 @@
 module.exports = function (casper, ready) {
     casper.waitWhileSelector('.no-results', function () {
-        ready();
+        casper.wait(100, function () {
+            ready();
+        });
     });
 }
