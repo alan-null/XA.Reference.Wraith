@@ -197,6 +197,18 @@ paths:
     path: /renderings/json/json-list?sc_device={0B4A31C9-712D-4578-A396-2DDC0F34B63A}
   renderings_json_results:
     path: /renderings/json/json-results?sc_device={0B4A31C9-712D-4578-A396-2DDC0F34B63A}
+  blog_home:
+    path: /blog
+  blog_tags_blog:
+    path: /blog/Home/search#SxaTags=blog&o=Published,Descending
+  blog_tags_sxa:
+    path: /blog/Home/search#SxaTags=sxa&o=Published,Descending
+  blog_posts:
+    path: /blog?posts=1
+  blog_post7:
+    path: /blog/2017/December/blog-post-7
+  blog_post1:
+    path: /blog/2017/December/blog-post-1
 
 screen_widths:
   - 1280
