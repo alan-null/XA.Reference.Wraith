@@ -209,6 +209,20 @@ paths:
     path: /blog/2017/December/blog-post-7
   blog_post1:
     path: /blog/2017/December/blog-post-1
+  features:
+    path: /features
+  features_search-tokens_undercurrentpage:
+    path: /features/search-tokens/undercurrentpage
+  features_search-tokens_excludecurrentpage:
+    path: /features/search-tokens/excludecurrentpage
+  features_search-tokens_itemsofthesametemplateasthecurrentpage:
+    path: /features/search-tokens/itemsofthesametemplateasthecurrentpage
+  features_search-tokens_itemswiththesamevalueinfield:
+    path: /features/search-tokens/itemswiththesamevalueinfield
+  features_search-tokens_taggedthesameascurrentpage:
+    path: /features/search-tokens/taggedthesameascurrentpage
+  features_search-tokens_taggedwithatleastonetagfromcurrentpage:
+    path: /features/search-tokens/taggedwithatleastonetagfromcurrentpage
 
 screen_widths:
   - 1280
