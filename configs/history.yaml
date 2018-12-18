@@ -48,6 +48,8 @@ paths:
     path: /renderings/forms
   renderings_forms_form-wrapper:
     path: /renderings/forms/form-wrapper
+  renderings_forms_sitecore-form-wrapper:
+    path: /renderings/forms/sitecore-form-wrapper
   renderings_maps:
     path: /renderings/maps
   renderings_maps_map:
