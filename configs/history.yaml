@@ -8,6 +8,7 @@ paths:
     path: /
   movies:
     path: /movies
+    before_capture: 'javascript/renderings/searach.js'
   renderings_compliancy:
     path: /renderings/compliancy
   renderings_compliancy_cookie-warning:
@@ -129,39 +130,60 @@ paths:
   renderings_search_checklist-filter:
     path: /renderings/search/checklist-filter
     before_capture: 'javascript/renderings/searach.js'
+  renderings_search_aggregated-facet-filter:
+    path: /renderings/search/aggregated-facet-filter
+    before_capture: 'javascript/renderings/searach.js'
+  renderings_search_facet-summary:
+    path: /renderings/search/facet-summary
+    before_capture: 'javascript/renderings/searach.js'
+  renderings_search_facet-summary-params:
+    path: /renderings/search/facet-summary#movie%20genre=Action%2CAdventure&movie%20rated=PG-13%2CPG&movie%20metascore=86%2C85
+    before_capture: 'javascript/renderings/searach.js'
   renderings_search_date-filter:
     path: /renderings/search/date-filter
+    before_capture: 'javascript/renderings/searach.js'
   renderings_search_dropdown-filter:
     path: /renderings/search/dropdown-filter
     before_capture: 'javascript/renderings/searach.js'
   renderings_search_facet-slider:
     path: /renderings/search/facet-slider
+    before_capture: 'javascript/renderings/searach.js'
   renderings_search_load-more:
     path: /renderings/search/load-more
+    before_capture: 'javascript/renderings/searach.js'
   renderings_search_location-filter:
     path: /renderings/search/location-filter
     before_capture: 'javascript/wait--casper.js'
   renderings_search_managed-range-filter:
     path: /renderings/search/managed-range-filter
+    before_capture: 'javascript/renderings/searach.js'
   renderings_search_page-selector:
     path: /renderings/search/page-selector
+    before_capture: 'javascript/renderings/searach.js'
   renderings_search_page-size:
     path: /renderings/search/page-size
+    before_capture: 'javascript/renderings/searach.js'
   renderings_search_radius-filter:
     path: /renderings/search/radius-filter
     before_capture: 'javascript/wait--casper.js'
   renderings_search_range-slider-filter:
     path: /renderings/search/range-slider-filter
+    before_capture: 'javascript/renderings/searach.js'
   renderings_search_results-count:
     path: /renderings/search/results-count
+    before_capture: 'javascript/renderings/searach.js'
   renderings_search_results-variant-selector:
     path: /renderings/search/results-variant-selector
+    before_capture: 'javascript/renderings/searach.js'
   renderings_search_search-box:
     path: /renderings/search/search-box
+    before_capture: 'javascript/renderings/searach.js'
   renderings_search_search-results:
     path: /renderings/search/search-results
+    before_capture: 'javascript/renderings/searach.js'
   renderings_search_sort-results:
     path: /renderings/search/sort-results
+    before_capture: 'javascript/renderings/searach.js'
   renderings_security:
     path: /renderings/security
   renderings_security_login:
@@ -203,8 +225,10 @@ paths:
     path: /blog
   blog_tags_blog:
     path: /blog/Home/search#SxaTags=blog&o=Published,Descending
+    before_capture: 'javascript/renderings/searach.js'
   blog_tags_sxa:
     path: /blog/Home/search#SxaTags=sxa&o=Published,Descending
+    before_capture: 'javascript/renderings/searach.js'
   blog_posts:
     path: /blog?posts=1
   blog_post7:
@@ -213,18 +237,30 @@ paths:
     path: /blog/2017/December/blog-post-1
   features:
     path: /features
+  features_rules_default:
+    path: /features/rules/default
+  features_rules_rendering-design:
+    path: /features/rules/rendering-design
+  features_scriban:
+    path: /features/scriban
   features_search-tokens_undercurrentpage:
     path: /features/search-tokens/undercurrentpage
+    before_capture: 'javascript/renderings/searach.js'
   features_search-tokens_excludecurrentpage:
     path: /features/search-tokens/excludecurrentpage
+    before_capture: 'javascript/renderings/searach.js'
   features_search-tokens_itemsofthesametemplateasthecurrentpage:
     path: /features/search-tokens/itemsofthesametemplateasthecurrentpage
+    before_capture: 'javascript/renderings/searach.js'
   features_search-tokens_itemswiththesamevalueinfield:
     path: /features/search-tokens/itemswiththesamevalueinfield
+    before_capture: 'javascript/renderings/searach.js'
   features_search-tokens_taggedthesameascurrentpage:
     path: /features/search-tokens/taggedthesameascurrentpage
+    before_capture: 'javascript/renderings/searach.js'
   features_search-tokens_taggedwithatleastonetagfromcurrentpage:
     path: /features/search-tokens/taggedwithatleastonetagfromcurrentpage
+    before_capture: 'javascript/renderings/searach.js'
 
 screen_widths:
   - 1280
