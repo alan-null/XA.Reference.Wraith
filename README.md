@@ -49,3 +49,11 @@ To do it easier, you can use **PowerShell** script for that.
 <a name="1"></a> <sup>1. Disk where you checkout this repository</sup>
 
 <a name="2"></a> <sup>2. Useful when we want to check whether results are correct in two succeeding tests. If not it means that in the future we will get many false positives.</sup>
+
+## Cleanup
+
+To remove unused containers run
+
+```powershell
+docker container ls -a -f ancestor=bbcnews/wraith | select -Skip 1 |% { $_.Substring(0,11) } | % { docker container rm $_ }
+```

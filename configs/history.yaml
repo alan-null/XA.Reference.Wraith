@@ -1,7 +1,7 @@
 browser: "casperjs"
 
 domains:
-  pattern: "http://10.0.75.1"
+  pattern: "http://172.30.112.1"
 
 paths:
   home:
@@ -137,7 +137,7 @@ paths:
     path: /renderings/search/facet-summary
     before_capture: 'javascript/renderings/searach.js'
   renderings_search_facet-summary-params:
-    path: /renderings/search/facet-summary#movie%20genre=Action%2CAdventure&movie%20rated=PG-13%2CPG&movie%20metascore=86%2C85
+    path: /renderings/search/facet-summary#movie%20genre=Action||Adventure&movie%20rated=PG-13||PG&movie%20metascore=86||85
     before_capture: 'javascript/renderings/searach.js'
   renderings_search_date-filter:
     path: /renderings/search/date-filter
